@@ -7,7 +7,7 @@ services:
       - redis
       - postgres
     ports:
-      - 8080:8080
+      - 55291:55291
     volumes:
       - evolution_instances:/evolution/instances
     networks:
@@ -15,7 +15,7 @@ services:
     env_file:
       - .env
     expose:
-      - 8080
+      - 55291
 
   redis:
     image: redis:latest
