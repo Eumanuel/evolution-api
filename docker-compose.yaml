@@ -41,6 +41,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=PASSWORD
       - POSTGRES_USER=user
+      - POSTGRES_DB=evolution
     volumes:
       - postgres_data:/var/lib/postgresql/data
     expose:
