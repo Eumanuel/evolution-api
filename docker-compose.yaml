@@ -34,10 +34,10 @@ services:
     image: postgres:15
     networks:
       - evolution-net
-    command: ["postgres", "-c", "max_connections=1000"]
+    command: ["postgres", "-p 5433", "-c", "max_connections=1000"]
     restart: always
     ports:
-      - 5432:5433
+      - 5433:5433
     environment:
       - POSTGRES_PASSWORD=PASSWORD
     volumes:
