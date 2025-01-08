@@ -4,8 +4,8 @@ services:
     image: atendai/evolution-api:homolog
     restart: always
     depends_on:
-      - redis
-      - postgres
+      - redis-evo
+      - postgres-evo
     ports:
       - 8080:8080
     volumes:
